@@ -1,13 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
+    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
-    <title>EZTracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EZTrack - Track everything</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
 
   <body>
-    <h1>EZTracker</h1>
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        <a class="navbar-brand" href="/eztracker/index.html">
+              <strong>EZTracker</strong>
+          </a>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="/eztracker/index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-toggle="modal" data-target="#login-reg-modal">
+                  Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="login-reg-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Modal cascading tabs-->
+          <div class="modal-c-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+              </li>
+            </ul>
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+              <!--Panel 7-->
+              <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                <!--Body-->
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="text" id="form22" class="form-control">
+                    <label for="form22">Your email</label>
+                  </div>
+
+                  <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="form23" class="form-control">
+                    <label for="form23">Your password</label>
+                  </div>
+                  <div class="text-center mt-2">
+                    <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer display-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close <i class="fa fa-times-circle ml-1"></i></button>
+                </div>
+
+              </div>
+              <!--/.Panel 7-->
+
+              <!--Panel 8-->
+              <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="text" id="form24" class="form-control">
+                    <label for="form24">Your email</label>
+                  </div>
+
+                  <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="form25" class="form-control">
+                    <label for="form25">Your password</label>
+                  </div>
+
+                  <div class="md-form form-sm">
+                    <i class="fa fa-lock prefix"></i>
+                    <input type="password" id="form26" class="form-control">
+                    <label for="form26">Repeat password</label>
+                  </div>
+
+                  <div class="text-center form-sm mt-2">
+                    <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                  </div>
+
+                  <fieldset class="additional-option">
+                    <input type="checkbox" id="checkbox21">
+                    <label for="checkbox21">Subscribe me to the newsletter</label>
+                  </fieldset>
+
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close <i class="fa fa-times-circle ml-1"></i></button>
+                </div>
+              </div>
+              <!--/.Panel 8-->
+            </div>
+
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    <!--Modal: Login / Register Form-->
+
+    <div class="container">
+      <div class="">
+
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="page-footer blue center-on-small-only">
+      <div class="footer-copyright">
+        <div class="container-fluid">
+          Copyright (c) 2017 Marc Friedrich. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
   </body>
 
 </html>
